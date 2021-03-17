@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+html {
+    background:#1D8FA1;
+    margin: 0 auto;
+}
+body {
+    margin:2% auto;
+    padding:0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    min-width: 470px;
+    width: 30%;
+    margin: 0 auto;
+    padding:5px 0px;
+}
+.content {
+    margin:0 auto;
+    background: #222A3B;
+    width:350px;
+    height:190px;
+    border-radius:12px;
+    clear:both;  
+    position: relative;  
+    padding:12px 0px;
+    box-shadow: 1px 1px 1px #1153D4;
+    color:#AC674A;
+}
+.limite {
+    padding:15px;
+}
+.faixa {
+    background:#D42E11;
+    height:30px;
+    width:350px;
+    margin-top: 17px;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size:30px;
+    color:white;
+    text-shadow: 1px 1px #D42E11;
+    margin-top: 5%;
+}
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size:15px;
+    color:#fff;
+}
+
+input{
+    background:transparent;
+    padding: 4px;
+    position:relative;
+    border: none;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+    margin-top: 10px;
+    font-size:13px;
+    text-align: left;
+    font-size: arial;
+    color:white;
+}     
+input[type=text] {
+    width:20%;
+    margin:45px 2px 20px 2px;
+}
+input[type=password]{
+    width:15%;
+    margin-top:2px;
+    float:right;
+    text-align: center;
+}
+input [type=month]{
+    font-size:13px;
+    font-family: arial;
+}       
+input:focus, input[type=text]:focus{
+    border-bottom:1px solid #D42E11;
+    transition: 1s;
+}
+input[type=submit] {
+    margin:20px auto;
+    display: block;
+    background-color: #D42E11;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #D42E11;
+    width:200px;
+    color:#fff;  
+    outline: none;
+    text-align:center;
+    justify-items: center;
+    align-items: center;
+    transition:1s;
+}
+input[type=submit]:hover {
+    width:350px;
+    text-transform: uppercase;
+}
+

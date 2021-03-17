@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CredCard Checkout</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+    <main>
+    <h1>Preencha os dados do seu cartão!</h1>
+    <h2>Você está quase lá! Para finalizar sua compra, basta preencher os dados do seu meio de pagamento.</h2><br><br>
+    <div class="content">
+        <div class="limite">
+            <form id="forms" name="forms" submitclick="return ok()">
+        
+            <input type="text" id="number1" placeholder="0000" minlength="4" maxlength="4" size="4" onkeypress='return SomenteNumero(event)' required>
+            <input type="text" id="number2" placeholder="0000" minlength="4" maxlength="4" size="4" onkeypress='return SomenteNumero(event)' required>
+            <input type="text" id="number3" placeholder="0000" minlength="4" maxlength="4" size="4" onkeypress='return SomenteNumero(event)' required>
+            <input type="text" id="number4" placeholder="0000" minlength="4" maxlength="4" size="4" onkeypress='return SomenteNumero(event)' required><br>
+         
+            <input type="" name="nome" id="nome" placeholder ="NOME DO TITULAR" size="40" required><br>
+
+            <input type="" name="mes" id="mes" placeholder ="MM" minlength="2" maxlength="2" size="2" style="width:7%" onkeypress='return SomenteNumero(event)' required> / 
+            <input type="" name="ano" id="ano" placeholder ="AAAA" minlength="4" maxlength="4" size="4" style="width:11%" onkeypress='return SomenteNumero(event)' required>
+        </div>    
+        </div><br>
+    <div class="content">
+        <div class="faixa"></div>
+        <div class="limite">
+            <input type="password" name="cvc" id="cvc" placeholder="CVC" minlength="3" maxlength="3" size="3" style="width:9%" onkeypress='return SomenteNumero(event)' required>
+        </div>
+    </div>
+    <input type="submit" value="Finalizar compra" id="enviar" name="enviar" onclick="return ok()">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</main>
+</body>
+</html>
